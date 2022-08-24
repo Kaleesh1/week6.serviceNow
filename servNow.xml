@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="ServiceNow" verbose="1">
+<parameter name="url" value="https://dev120231.service-now.com/login.do"></parameter>
+<parameter name="uname" value="admin"></parameter>
+<parameter name="pass" value="Ruth@litapSH2502"></parameter>	 	
+  <test thread-count="5" name="Mobile">
+    <classes>
+      <!--class name="week6.servicenowAssign.ProjectSpecificMethods"/-->
+      <!-- class name="week6.servicenowAssign.Mobile"/ -->
+      <!--class name="week6.servicenowAssign.CreateNewProposal"/-->
+      <class name="week6.servicenowAssign.CreateNewCaller"/>
+    </classes>
+  </test> <!-- All -->
+</suite> <!-- ServiceNow -->
